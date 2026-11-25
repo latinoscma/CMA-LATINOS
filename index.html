@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="cma.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMA Centro Servizi Latinos - CAF e Patronato</title>
+    <meta name="description" content="CAF e Patronato per immigrazione a Bergamo. Servizi ISEE, 730, permessi di soggiorno, cittadinanza, visti, disoccupazione (NASpI) e pratiche burocratiche. Appuntamento test italiano.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #dc2626;
+            --accent: #059669;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        .star-rating {
+            color: #fbbf24;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="sticky top-0 z-50 shadow-lg bg-white">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <img src="cma.jpg"
+                alt="Logo CMA Centro Servizi Latinos"
+                class="w-12 h-12 object-contain rounded-lg">
+                <div>
+                    <h1 class="text-xl font-bold text-blue-800">CMA Centro Servizi Latinos</h1>
+                    <p class="text-sm text-gray-600">CAF - Patronato Immigrazione</p>
+                </div>
+            </div>
+            <ul id="nav-list" class="flex flex-wrap justify-center space-x-6 font-medium">
+                <!-- Rendered via JS -->
+            </ul>
+            <a href="#contatti" class="mt-4 md:mt-0 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full font-semibold shadow-md transition duration-300">
+                <i class="fas fa-calendar-check mr-2"></i>Contattaci
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Servizi CAF e Patronato per la Comunità</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">Assistenza professionale per immigrazione, pratiche burocratiche, modelli ISEE/730, permessi di soggiorno e molto altro a Bergamo.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="#servizi" class="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 rounded-full font-bold text-lg shadow-lg transition duration-300">
+                        <i class="fas fa-list-check mr-2"></i>I Nostri Servizi
+                    </a>
+                    <a href="#recensioni" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-full font-bold text-lg shadow-lg transition duration-300">
+                        <i class="fas fa-star mr-2"></i>Leggi le Recensioni
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="servizi" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Servizi Offerti</h2>
+                <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Rendered via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Info & Hours -->
+        <section class="py-16 bg-gradient-to-r from-blue-50 to-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Informazioni e Orari</h2>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl">
+                            <div class="mb-6">
+                                <h3 id="orari" class="text-xl font-semibold text-blue-800 mb-3 scroll-mt-28"><i class="fas fa-clock mr-2"></i>Orari di Apertura </h3>
+                                <ul class="space-y-2">
+                                    <li class="flex justify-between py-2 border-b"><span class="font-medium">Lunedì - Venerdì</span> <span class="font-bold text-gray-700">9:00-13:00 / 14:30-18:30</span></li>
+                                    <li class="flex justify-between py-2 border-b"><span class="font-medium">Sabato</span> <span class="font-bold text-gray-700">9:00 - 12:00</span></li>
+                                    <li class="flex justify-between py-2"><span class="font-medium">Domenica</span> <span class="font-bold text-gray-700">Chiuso</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-blue-800 mb-3"><i class="fas fa-map-marker-alt mr-2"></i>La Nostra Sede</h3>
+                                <p class="text-gray-700 mb-4"><i class="fas fa-location-dot text-red-500 mr-2"></i>Via Gianbattista Moroni 168, Bergamo</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.347478968378!2d9.669215776693512!3d45.69812217108197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781515a12d03e13%3A0x64864b7c1b0d5f9e!2sVia%20Gianbattista%20Moroni%2C%20168%2C%2024121%20Bergamo%20BG%2C%20Italy!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" class="w-full h-64 rounded-lg border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews -->
+                    <div id="recensioni">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Recensioni dei Clienti</h2>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl">
+                            <div class="flex items-center mb-6">
+                                <div class="text-4xl font-bold text-gray-900 mr-4">4,2</div>
+                                <div>
+                                    <div class="star-rating text-2xl mb-1">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p class="text-gray-600">33 recensioni su Google</p>
+                                </div>
+                            </div>
+                            <div id="reviews-list" class="space-y-6 max-h-96 overflow-y-auto pr-2">
+                                <!-- Rendered via JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contatti" class="py-16 bg-gray-900 text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contattaci</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="tel:0350167312" class="bg-gray-800 hover:bg-blue-800 p-6 rounded-2xl text-center transition duration-300 group">
+                        <div class="text-blue-300 text-4xl mb-4 group-hover:text-white"><i class="fas fa-phone"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Ufficio</h3>
+                        <p class="text-2xl font-bold">035 0167312</p>
+                    </a>
+                    <a href="https://wa.me/3513388928" class="bg-gray-800 hover:bg-green-600 p-6 rounded-2xl text-center transition duration-300 group">
+                        <div class="text-green-400 text-4xl mb-4 group-hover:text-white"><i class="fab fa-whatsapp"></i></div>
+                        <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                        <p class="text-2xl font-bold">351 3388928</p>
+                    </a>
+                    <a href="mailto:cmalatinoservizi@gmail.com" class="bg-gray-800 hover:bg-red-700 p-6 rounded-2xl text-center transition duration-300 group">
+                        <div class="text-red-300 text-4xl mb-4 group-hover:text-white"><i class="fas fa-envelope"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Email</h3>
+                        <p class="text-lg break-all">cmalatinoservizi@gmail.com</p>
+                    </a>
+                    <a href="https://www.facebook.com/CAF.CMALatinos" target="_blank" rel="noopener noreferrer" class="bg-gray-800 hover:bg-blue-600 p-6 rounded-2xl text-center transition duration-300 group">
+                        <div class="text-blue-400 text-4xl mb-4 group-hover:text-white"><i class="fab fa-facebook"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Facebook</h3>
+                        <p class="text-lg">CMA Latinos</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white mb-2">CMA Centro Servizi Latinos</h3>
+                    <p class="text-blue-300">CAF - Patronato Immigrazione</p>
+                    <p class="mt-2"><i class="fas fa-map-marker-alt mr-2"></i>Via Gianbattista Moroni 168, Bergamo</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="mb-2">&copy; <span id="current-year"></span> CMA Centro Servizi Latinos.</p>
+                    <p class="text-sm opacity-75">Servizi di assistenza fiscale, immigrazione e pratiche burocratiche.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. DATA LAYER
+        const navItems = [
+            { label: "Home", href: "#" },
+            { label: "Servizi", href: "#servizi" },
+            { label: "Orari", href: "#orari" },
+            { label: "Recensioni", href: "#recensioni" },
+            { label: "Contatti", href: "#contatti" }
+        ];
+
+        const services = [
+            { icon: "fa-file-invoice-dollar", title: "Modello ISEE", desc: "Calcolo Indicatore Situazione Economica Equivalente per agevolazioni." },
+            { icon: "fa-calculator", title: "Modello 730/Unico PF", desc: "Dichiarazione dei redditi precompilata e assistenza fiscale." },
+            { icon: "fa-child", title: "Assegno Unico Universale", desc: "Richiesta e gestione assegni per figli a carico." },
+            { icon: "fa-laptop-file", title: "Dimissioni Telematiche", desc: "Assistenza per dimissioni volontarie via web." },
+            { icon: "fa-briefcase", title: "NASpI/Disoccupazione", desc: "Pratiche per indennità di disoccupazione." },
+            { icon: "fa-house", title: "Registrazione Contratti Locazione", desc: "Registrazione contratti d'affitto." },
+            { icon: "fa-language", title: "Appuntamento Test Italiano", desc: "Supporto per prenotazione test di lingua." },
+            { icon: "fa-flag", title: "Richiesta Cittadinanza", desc: "Assistenza completa per cittadinanza italiana." },
+            { icon: "fa-id-card", title: "Permessi di Soggiorno", desc: "Rilascio, rinnovo e aggiornamento permessi." },
+            { icon: "fa-gavel", title: "Bandi Regionali/Comunali", desc: "Partecipazione a bandi e finanziamenti." },
+            { icon: "fa-bolt", title: "Bonus Luce/Gas", desc: "Richiesta agevolazioni su bollette energetiche." },
+            { icon: "fa-user-tie", title: "Paghe Colf/Badanti", desc: "Gestione paghe e contributi per assistenti familiari." },
+            { icon: "fa-plane", title: "Visti Turistici", desc: "Pratiche per visti turistici e di ingresso." },
+            { icon: "fa-people-group", title: "Flussi", desc: "Assistenza per decreti flussi e ingresso lavoratori." },
+            { icon: "fa-scale-balanced", title: "Traduzioni Giurate", desc: "Traduzioni legalmente riconosciute di documenti." }
+        ];
+
+        const reviews = [
+            { stars: 5, time: "3 settimane fa", text: "Persone molto disponibili, raccomandabile realizzano tutti i tuoi progetti, pure il broker", new: true },
+            { stars: 5, time: "7 mesi fa", text: "Ottima attenzione e buon servizio, sempre pronti a spiegare passo dopo passo tutto ciò che è necessario e sempre con quella gentilezza, efficienza e professionalità che li caratterizza.", new: false },
+            { stars: 5, time: "3 settimane fa", text: "La ragazza era gentile, grazie per questa esperienza", new: true },
+            { stars: 5, time: "2 anni fa", text: "IL TOP: personale molto preparato professionale cordiali e attenti per avere un ottimo servizio ed essere assessorati. I tempi di attesa per un appuntamento e molto breve hanno molta disponibilità. La sua posizione in centro Bergamo e ottima.", new: false },
+            { stars: 5, time: "2 settimane fa", text: "Grazie per il servizio", new: true },
+            { stars: 4, time: "3 settimane fa", text: "Servizio eccellente, sono stati molto disponibili nel rispondere alle nostre domande.", new: true },
+            { stars: 5, time: "4 mesi fa", text: "Molto bene! 730 e ISEE Nayra brava ragazza", new: false },
+            { stars: 5, time: "2 anni fa", text: "Servizio eccellente, mi hanno aiutato molto con le pratiche burocratiche, mi hanno consigliato e assistito con i documenti.", new: false },
+            { stars: 5, time: "un anno fa", text: "Servizio eccellente e personale molto cordiale, consigliato al 100%.", new: false },
+            { stars: 5, time: "2 anni fa", text: "UN'ESPERIENZA MOLTO POSITIVA, SONO SODDISFATTO DEL LORO SERVIZIO ☺️☺️", new: false },
+            { stars: 5, time: "2 anni fa", text: "Servizio eccellente, senza dubbio.", new: false }
+        ];
+
+        // 2. RENDER FUNCTIONS
+        function renderNav(items) {
+            return items.map(item => `
+                <li>
+                    <a href=\"${item.href}\" class=\"text-gray-700 hover:text-blue-700 transition duration-300\">
+                        ${item.label}
+                    </a>
+                </li>
+            `).join("");
+        }
+
+        function renderServices(items) {
+            return items.map((item, idx) => `
+                <div class=\"service-card bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-blue-300 transition duration-300\">
+                    <div class=\"text-blue-700 text-3xl mb-4\">
+                        <i class=\"fas ${item.icon}\"></i>
+                    </div>
+                    <h3 class=\"text-xl font-bold text-gray-900 mb-3\">${item.title}</h3>
+                    <p class=\"text-gray-600\">${item.desc}</p>
+                </div>
+            `).join("");
+        }
+
+        function renderReviews(items) {
+            return items.map((item, idx) => `
+                <div class=\"p-4 border border-gray-200 rounded-xl ${item.new ? 'bg-blue-50 border-blue-200' : ''}\">
+                    <div class=\"flex justify-between items-start mb-2\">
+                        <div class=\"star-rating\">
+                            ${Array.from({ length: 5 }, (_, i) => 
+                                i < item.stars ? '<i class=\"fas fa-star\"></i>' : '<i class=\"far fa-star\"></i>'
+                            ).join('')}
+                        </div>
+                        <span class=\"text-sm text-gray-500\">${item.time}</span>
+                    </div>
+                    <p class=\"text-gray-700\">${item.text}</p>
+                    ${item.new ? '<span class=\"inline-block mt-2 text-xs font-bold bg-green-100 text-green-800 px-2 py-1 rounded\">Nuova</span>' : ''}
+                </div>
+            `).join("");
+        }
+
+        // 3. MOUNT
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("nav-list").innerHTML = renderNav(navItems);
+            document.getElementById("services-grid").innerHTML = renderServices(services);
+            document.getElementById("reviews-list").innerHTML = renderReviews(reviews);
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+
+            // Smooth scroll for anchor links
+            document.addEventListener("click", function(e) {
+                const link = e.target.closest("a[href^='#']");
+                if (!link) return;
+                e.preventDefault();
+                const targetId = link.getAttribute("href");
+                if (targetId === "#") {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    return;
+                }
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    // Update URL without page jump
+                    history.pushState(null, null, targetId);
+                }
+            });
+
+            // Add hover effect to service cards
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => card.classList.add('shadow-xl'));
+                card.addEventListener('mouseleave', () => card.classList.remove('shadow-xl'));
+            });
+        });
+    </script>
+</body>
+</html>
